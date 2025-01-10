@@ -7,6 +7,13 @@
 \description{
 An R6 class to interface with the Python TabPFNClassifier.
 }
+\section{Public fields}{
+\if{html}{\out{<div class="r6-fields">}}
+\describe{
+\item{\code{classifier}}{Python TabPFNClassifier instance.}
+}
+\if{html}{\out{</div>}}
+}
 \section{Methods}{
 \subsection{Public methods}{
 \itemize{
@@ -21,7 +28,7 @@ An R6 class to interface with the Python TabPFNClassifier.
 \if{latex}{\out{\hypertarget{method-TabPFNClassifier-new}{}}}
 \subsection{Method \code{new()}}{
 \subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{TabPFNClassifier$new(access_token = Sys.getenv("TABPFN_ACCESS_TOKEN"))}\if{html}{\out{</div>}}
+\if{html}{\out{<div class="r">}}\preformatted{TabPFNClassifier$new()}\if{html}{\out{</div>}}
 }
 
 \subsection{Arguments}{

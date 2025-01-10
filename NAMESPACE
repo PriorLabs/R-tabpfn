@@ -2,5 +2,6 @@
 
 export(TabPFNClassifier)
 export(install_tabpfn)
+export(set_tabpfn_access_token)
 import(R6)
 import(reticulate)
