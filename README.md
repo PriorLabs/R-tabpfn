@@ -1,15 +1,40 @@
 
 # TabPFN for R
 
+[![Discord](https://img.shields.io/discord/1285598202732482621?color=7289da&label=Discord&logo=discord&logoColor=ffffff)](https://discord.gg/BHnX2Ptf4j)
+[![Documentation](https://img.shields.io/badge/docs-priorlabs.ai-blue)](https://priorlabs.ai/docs)
+[![Twitter Follow](https://img.shields.io/twitter/follow/Prior_Labs?style=social)](https://twitter.com/Prior_Labs)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+![Last Commit](https://img.shields.io/github/last-commit/PriorLabs/R-tabpfn)
+
+TabPFN is a foundation model for tabular data that outperforms traditional methods while being dramatically faster. This package provides easy access to the TabPFN API from R, enabling state-of-the-art tabular machine learning in just a few lines of code.
+
 ## Installation
 
 
 ```R
-devtools::install_github("robintibor/R-tabpfn")
+devtools::install_github("PriorLabs/R-tabpfn")
 library(tabpfn)
 install_tabpfn()
 ```
 
+
+## Access Token
+
+TabPFN is a cloud-based service. You need a free access token to use it.
+
+1. Sign up or log in at <https://ux.priorlabs.ai/account>
+2. Copy your access token from the account page.
+
+The token is the same credential used by the Python [`tabpfn-client`](https://github.com/PriorLabs/tabpfn-client) library.
+If you already have a Python token, retrieve it with:
+
+```python
+import tabpfn_client
+print(tabpfn_client.get_access_token())
+```
+
+Keep your token private — treat it like a password.
 
 ## Usage
 
@@ -57,7 +82,7 @@ predictions <- regressor$predict(X_test)
 ## ⚠️ Alpha Release Note
 This is an alpha release. We appreciate your understanding and feedback as we continue to improve the package.
 
-This is a cloud-based service using our TabPFN client (https://github.com/automl/tabpfn-client). Your data will be sent to our servers for processing.
+This is a cloud-based service using our TabPFN client (https://github.com/PriorLabs/tabpfn-client). Your data will be sent to our servers for processing.
 - Do NOT upload any Personally Identifiable Information (PII)
 - Do NOT upload any sensitive or confidential data
 - Do NOT upload any data you don't have permission to share
