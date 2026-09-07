@@ -1,6 +1,6 @@
 #' TabPFN Base Estimator
 #'
-#' An R6 class to for both TabPFNClassifier and TabPFNRegressor
+#' An R6 class for both TabPFNClassifier and TabPFNRegressor
 #'
 #' @docType class
 #' @import R6
@@ -88,7 +88,7 @@ TabPFNClassifier <- R6::R6Class("TabPFNClassifier",
 
 #' TabPFN Regressor
 #'
-#' An R6 class to interface with the Python TabPFNClassifier.
+#' An R6 class to interface with the Python TabPFNRegressor.
 #'
 #' @docType class
 #' @import R6

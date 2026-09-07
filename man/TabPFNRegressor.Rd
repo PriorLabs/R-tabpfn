@@ -10,7 +10,7 @@ TabPFN Regressor
 TabPFN Regressor
 }
 \details{
-An R6 class to interface with the Python TabPFNClassifier.
+An R6 class to interface with the Python TabPFNRegressor.
 }
 \section{Super class}{
 \code{\link[tabpfn:TabPFNBase]{tabpfn::TabPFNBase}} -> \code{TabPFNRegressor}
