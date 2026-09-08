@@ -10,7 +10,7 @@ TabPFN Base Estimator
 TabPFN Base Estimator
 }
 \details{
-An R6 class to for both TabPFNClassifier and TabPFNRegressor
+An R6 class for both TabPFNClassifier and TabPFNRegressor
 }
 \section{Public fields}{
 \if{html}{\out{<div class="r6-fields">}}
